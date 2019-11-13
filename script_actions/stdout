@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# this is an example script action for ithought. it outlines the three cases
+# an action script must handle (title, info, action )
+
+case "$1" in
+	title)
+		echo stdout_script
+		;;
+	info)
+		echo "The stdout_script outputs the body of an enty to stdout by way of an sh script."
+		;;
+	action)
+		echo $2
+		;;
+esac

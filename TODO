@@ -1,0 +1,10 @@
+- support for editing entries in an external editor.
+- command line interface
+- better featureset for livejournal client.
+- i18n, maybe?
+- there is some code that many modules share, this should be put in one file,
+	instead of a (possibly) different implementation in each separate file.
+- allow plugins to get the entry title as well as the body.
+- in ui.c populate(), i had to move show_row() out of the freeze/thaw block to
+	allow gtk to show the whole row, this can introduce flicker if the user
+	rapidly creates new entries.

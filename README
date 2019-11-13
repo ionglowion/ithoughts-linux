@@ -1,0 +1,24 @@
+ithought - an extensible text management system.
+
+version a5 - 20010324
+
+Build Instructions:
+
+./configure 
+	configures Makefiles
+make
+	compiles program, binary is located as src/ithought
+make install (as root)
+	installs ithought binary and related files
+
+for more info on ithought, visit:
+	http://ithought.sourceforge.net/
+
+if you are interested in the ithought mailing list, visit:
+	http://lists.sourceforge.net/lists/listinfo/ithought-devel
+
+to submit bug reports and feature requests, use the SourceForge site:
+	http://sourceforge.net/projects/ithought/
+
+questions/comments/suggestions/patches/death threats (all welcome) to:
+	<voltronw@yahoo.com>

@@ -1,0 +1,20 @@
+2001-03-24 Anthony Taranto <voltronw@yahoo.com>
+
+	* README: added some more links
+
+2001-03-22 Anthony Taranto <voltronw@yahoo.com>
+
+	* updating files for ithought-a5
+
+2001-03-20 Anthony Taranto <voltronw@yahoo.com>
+
+	* added a message to the configure process to inform users how to find and
+	install libxml2 if it is not found.
+
+2001-03-17 Anthony Taranto <voltronw@yahoo.com>
+
+	* ithought now uses libxml2, and parses with SAX.
+
+2001-03-15 Anthony Taranto <voltronw@yahoo.com>
+
+	* ithought now uses automake.

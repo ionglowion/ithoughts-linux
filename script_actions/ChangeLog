@@ -1,0 +1,4 @@
+2001-03-17 Anthony Taranto <voltronw@yahoo.com>
+
+	* Makefile.am: scritps now listed in SOURCES instead of bin_SCRIPTS. this
+	lets 'make distcheck' work.

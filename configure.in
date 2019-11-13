@@ -1,0 +1,35 @@
+AC_INIT(src/ithought.c)
+AM_INIT_AUTOMAKE(ithought, a5)
+AM_MAINTAINER_MODE
+
+AC_PROG_CC
+AC_PROG_CPP
+AC_PROG_INSTALL
+AM_PROG_LIBTOOL
+
+GTK_CHECK
+XML2_CHECK
+
+AC_HEADER_DIRENT
+AC_CHECK_HEADERS(string.h fcntl.h unistd.h)
+
+AC_TYPE_SIGNAL
+AC_CHECK_FUNCS(socket mkdir strstr strchr)
+
+AC_SUBST(GTK_LIBS)
+AC_SUBST(GTK_INCLUDEDIR)
+AC_SUBST(XML_LIBS)
+AC_SUBST(XML_INCLUDEDIR)
+
+AC_OUTPUT([
+Makefile
+src/Makefile
+module_actions/Makefile
+module_actions/advogato/Makefile
+module_actions/itep/Makefile
+module_actions/kuro5hin/Makefile
+module_actions/livejournal/Makefile
+module_actions/stdout/Makefile
+script_actions/Makefile
+])
+

@@ -1,0 +1,49 @@
+2001-03-24 Anthony Taranto <voltronw@yahoo.com>
+
+	* ui.c: removed about tab, will try to make something better for a6.
+
+2001-03-23 Anthony Taranto <voltronw@yahoo.com>
+
+	* ui.c: had to take show_row() out from within the freeze/thaw pair to
+	allow show_row() to show the last row if need be. this introduces some
+	flicker in certain instances.
+
+2001-03-22 Anthony Taranto <voltronw@yahoo.com>
+
+	* entry.c: doesn't call populate() unless necessary in a few places.
+	* ui.c: keeps the selected row in the entries clist visible.
+	* ui.c: added about tab. it is somewhat sparse.
+
+2001-03-21 Anthony Taranto <voltronw@yahoo.com>
+
+	* ui.c: entry name GtkEntry is now wider. also added some changes to
+	the entries clist populate function to keep the selected entry visible.
+
+2001-03-20 Anthony Taranto <voltronw@yahoo.com>
+
+	* entries are now shown when they are selected from the clist, not from the
+	click event. this allows keyboard control, and the current entry is always
+	apparent by looking at the clist selection.
+	* file.c: very long entries can now be read. we use a GString to buffer
+	successive SAX character callbacks for each field and only put it in the
+	Entry when we are done with the xml field.
+	* ui.c: fixed a bug where the current entry's text was always sent to the
+	action regardless of what the menu popped up on.
+
+2001-03-18 Anthony Taranto <voltronw@yahoo.com>
+
+	* the actions menu now consists of only the actions selected in the clists
+	on the actions tab.
+
+2001-03-18 Joe Bowman <jbowman@kiva.net>
+
+	* actions and modules are now multi-selectable and are selected by default
+	* connected the select and unselect signals for 
+	ithought_callback_modules_clist to the appropriate callback functions in
+	callback.c. Nothing happening there yet though.
+
+2001-03-17 Anthony Taranto <voltronw@yahoo.com>
+
+	* file.c: can now read 1 char fields successfully.
+	* ui.c: displays a warning if ithought_ui_entries_clist_populate() doesn't
+	show all the entries while the search string is empty.
